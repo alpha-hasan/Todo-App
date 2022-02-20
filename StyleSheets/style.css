@@ -1,0 +1,132 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  box-sizing: inherit;
+  font-family: "Roboto", sans-serif;
+}
+.page-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heading {
+  font-weight: 300;
+  font-size: 50px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* Input Section Start */
+
+.input > input {
+  font-family: "Roboto", sans-serif;
+  width: 582px;
+  height: 44px;
+  padding: 0px 8px 0 14px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #c9c2c2;
+  transition: all 0.3s ease;
+}
+
+/* Input Section End */
+
+
+/* Input Buttons Section Start */
+
+.btn-container {
+  text-align: center;
+}
+.btn-container input,
+.btn-container button {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  background-color: forestgreen;
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  margin: 29px 4px;
+  padding: 0 16px;
+  height: 36px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: inset 0 0 0 0 white;
+}
+
+/* Input Button Section End */
+
+
+/* Dodos list Section Start */
+
+.list-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.added-item-container {
+  width: 602px;
+}
+.item-row {
+  display: flex;
+  justify-content: space-between;
+}
+#to-dos {
+  font-size: 24px;
+}
+.del-btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  background-color: forestgreen;
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 0 16px;
+  height: 36px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: inset 0 0 0 0 white;
+}
+
+/* Dodos list Section End */
+
+
+/* Animation Section Start */
+
+
+/* Input Section Start */
+
+.input > input:focus {
+  transition: all 0.2s ease-in-out;
+  border-bottom: 2px solid forestgreen;
+  margin: 29px 4px;
+}
+.input > input:focus:placeholder-shown {
+  color: forestgreen;
+}
+.btn-container button:hover,
+.btn-container input:hover {
+  box-shadow: inset 300px 0 0 0 white;
+  color: forestgreen;
+  border: 1px solid forestgreen;
+  transition: all 0.2s ease-in;
+}
+
+/* Input Section End */
+
+
+/* Dodos list Section Start */
+
+.del-btn:hover {
+  box-shadow: inset 300px 0 0 0 white;
+  color: forestgreen;
+  border: 1px solid forestgreen;
+  transition: all 0.2s ease-in;
+}
+
+/* Dodos list Section End */
+
+
+/* Animation Section End */
